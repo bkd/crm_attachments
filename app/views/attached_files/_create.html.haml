@@ -8,16 +8,14 @@
     %table{ :width => 500, :cellpadding => 0, :cellspacing => 0 }
       %tr
         %td{ :valign => :top, :colspan => 5 }
-          .label.top.req #{t:name}:
+          .label.top.req #{t :name}:
           = f.text_field :name, :style => "width:350px"
       %tr
         %td{ :valign => :top, :colspan => 5 }
-          .label.top.req #{t:file}:
+          .label.top.req #{t :file}:
           = f.file_field :attachment
   .buttonbar
     = f.submit t(:upload_file), :onclick => "this.disabled = true"
-    #{t:or}
+    #{t :or}
     = link_to_cancel new_attached_file_path
-%b
-
 
